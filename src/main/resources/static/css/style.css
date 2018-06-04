@@ -1,0 +1,1101 @@
+*{margin:0;padding:0;}
+aside,section,article,p,div,span,figure,figcaption,img,input,form,html, footer, header,nav, p, ul, li{margin:0;padding:0;}
+ul{list-style:none;}
+.clear{clear:both;height:0;}
+:focus, .btn:focus, .btn:active:focus{outline:none;}
+ul:after{clear:both;display:block;content:"";}
+html{font-smooth:always;}
+img{max-width:100%;border:none;vertical-align:bottom;user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;	-o-user-select:none;}
+button, input[type="submit"]{-webkit-appearance:none;}
+body{background:#fff;color: #333;font-size:16px;line-height:21px;font-family: 'Roboto', sans-serif; font-weight:400; overflow-x:hidden;}
+body, html
+{
+	height:100%;
+}
+a
+{
+	color:#2e4485;
+}
+h1, h2, h3, h4, h5
+{
+	font-weight:400;
+}
+.main_wrapper{
+	background: linear-gradient(rgba(188,232,246,1),rgba(255,0,0,0) );
+	height: 100%
+}
+.logo_header
+{
+	border-bottom:1px solid #b4d3dd;
+	padding: 20px 0;
+}
+.login_form_outer {
+    max-width: 430px;
+    margin: 120px auto 0;
+  
+}
+.product_wrapper {
+    text-align: center;
+}
+.login_form
+{
+	background: #fff;
+	border-radius: 5px;
+	padding: 20px 30px 30px 30px;
+	border: 1px solid #cfcfcf;
+    border-radius: 5px;
+}
+.shadow
+{
+	vertical-align: top;
+}
+.login_form h2
+{
+	border-bottom:1px solid #e5e5e5;
+	color:#000;
+	font-weight: 400;
+	margin:0;
+	padding-bottom: 25px;
+}
+.login_form label
+{
+	font-size: 18px;
+	color: #333333;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.login_form .form-control
+{
+	box-shadow: none;
+	height: auto;
+	padding: 8px 15px;
+	background: #fbfbee;
+}
+.forgot_password a
+{
+	color: #c95643;
+	float:right;
+	text-decoration: underline;
+	font-size: 14px;
+}
+.forgot_password a:hover
+{
+	text-decoration: none;
+}
+.login_form .form-group
+{
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+.blue_btn
+{
+	background: #25336d;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 18px;
+	border: none;
+	padding: 7px 40px;
+	display: inline-block;
+	line-height: 26px;
+	margin-top: 20px;
+}
+.blue_btn:hover
+{
+	background: #1f2d57;
+}
+.login_form h2 + p
+{
+	margin-top: 20px;
+}
+
+/*** dashboard page css start here ***/
+.header
+{
+	background: #fff;
+	box-shadow: 0 0 6px rgba(0,0,0,0.1);
+	height: 78px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	-webkit-transform: translateZ(0);
+	z-index: 9999;
+	min-width: 700px;
+}
+.dashboard_logoarea
+{
+	float: left;
+	/**width:142px;**/
+	height: 78px;
+	/**padding: 12px 0px;**/
+}
+.dashboard_logoarea img
+{
+	height: 60px;
+}
+.right_loggedarea
+{
+	float: right;
+	margin-right: 15px;
+	margin-top: 18px;
+}
+.right_loggedarea ul li
+{
+	display: inline-block;
+	margin-left: 70px;
+	font-size: 14px;
+	vertical-align: middle;
+}
+.right_loggedarea ul li a
+{
+	color: #999999;
+}
+.right_loggedarea ul li a i, .right_loggedarea ul li a:hover {
+	color: #999999;
+}
+.notification_count
+{
+	display: inline-block;
+	min-width: 22px;
+	min-height: 22px;
+	background: #000;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 100%;
+	margin-left: 5px;
+}
+.right_loggedarea ul li img
+{
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.right_loggedarea ul li a i
+{
+	vertical-align: text-top;
+}
+.main-page
+{
+	padding-top: 78px;
+	padding-left: 270px;
+	height: 100%;
+	min-width:700px;
+}
+.left_sidebar
+{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background: #25336d;
+	width: 270px;
+	padding-top: 85px;
+	z-index: 999;
+	overflow: auto;
+	-webkit-transform: translateZ(0);
+	transition:0.3s all ease-in;
+	-moz-transition:0.3s all ease-in;
+	-webkit-transition:0.3s all ease-in;
+	-ms-transition:0.3s all ease-in;
+	-o-transition:0.3s all ease-in;
+}
+.left_sidebar ul li
+{
+	border-bottom: 1px solid #57699d;
+}
+.left_sidebar ul li:last-child
+{
+	border-bottom: none;
+}
+.left_sidebar ul li a
+{
+	color: #fff;
+	display: block;
+	padding: 14px;
+}
+.left_sidebar ul li a i
+{
+	min-width: 30px;
+}
+.left_sidebar ul li.active a, .left_sidebar ul li:hover a
+{
+	color: #f1a732;
+}
+.left_sidebar ul li.active a span, .left_sidebar ul li:hover a span
+{
+	text-decoration: underline;
+}
+.content_area
+{
+	padding: 15px 15px 35px 15px;
+	min-height: 100%;
+	position: relative;
+}
+.top3_area
+{
+	padding: 10px 0 45px;
+}
+.white_three
+{
+	background: #fff;
+	margin: 20px 0 0 29px;
+	text-align: center;
+	padding: 32px;
+	position: relative;
+	border-radius: 2px;
+	box-shadow: 0px 8px 28px rgba(0,0,0,.12);
+}
+.white_three p
+{
+	color: #b5bbcb;
+	font-size: 12px;
+	margin-top: 20px;
+}
+.white_three span
+{
+	position: absolute;
+	left: -29px;
+	width: 58px;
+	height: 58px;
+	font-size: 30px;
+	color: #fff;
+	line-height: 47px;
+	border-radius: 2px;
+	top: 15px;
+}
+.white_three h3
+{
+	margin-top: 0;
+}
+.white_box
+{
+	background: #fff;
+	padding: 15px;
+	border-radius: 2px;
+}
+.total_sold h4
+{
+	font-weight:700;
+	color:#333333;
+	margin-bottom: 35px;
+}
+.graph_area img {
+    width: 100%;
+}
+/**product start here **/
+.product_detail h3 span {
+    font-size: 16px;
+}
+.top_selling_product h3 {
+    margin: 25px 0 27px 0;
+}
+
+/**product end here **/
+.footer
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 10px 15px;
+}
+.right_loggedarea .dropdown-menu
+{
+	background: #2e4485;
+	right: 0;
+	left: inherit;
+	top: 58px;
+}
+.right_loggedarea .dropdown-menu a
+{
+	display: block;
+	color: #fff;
+	font-size: 16px;
+	padding: 10px;
+	border-bottom: 1px solid #6b8498;
+}
+.right_loggedarea .dropdown-menu a:last-child
+{
+	border-bottom: none;
+}
+.right_loggedarea .dropdown-menu a i {
+	color: #fff;
+	vertical-align: middle;
+	min-width: 25px;
+}
+.right_loggedarea .dropdown-menu a:hover, .right_loggedarea .dropdown-menu a:hover i
+{
+	color:#f1a732;
+}
+.right_loggedarea .dropdown-menu::after
+{
+	position: absolute;
+	content: "";
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid #2e4485;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	top: -20px;
+	right: 5px;
+}
+.yellow_btn {
+    font-size: 18px;
+    font-weight: 400;
+    background: #707070;
+    padding: 20px 10px;
+    margin-top: 33px;
+    width: 100%
+}
+.yellow_btn:hover 
+{
+	background: #1bb8fa;
+	color: #fff;
+}
+.tables_area .white_box
+{
+	padding: 0;
+	box-shadow: 0 0 6px rgba(0,0,0,0.2);
+	margin-top: 15px;
+}
+.table-responsive table thead tr th
+{
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	border-bottom: 2px solid #2e4485;
+	padding: 10px 17px;
+}
+.table-responsive table tbody tr td
+{
+	color: #242424;
+	font-size: 16px;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding: 12px 15px;
+}
+.table-responsive table tbody tr td:last-child
+{
+	border-right: none;
+}
+/**.table-responsive table tbody tr:nth-child(2n) td
+{
+	background:#eeeef3;
+}
+**/
+.action_btn
+{
+	color:#242424;
+	font-size:14px;
+	display: inline-block;
+	margin: 10px 5px;
+    text-decoration: underline;
+    color: #25336d;
+}
+}
+.action_btn:hover
+{
+	color:#f1a732;
+}
+/*** dashboard page css end here ***/
+
+
+
+
+
+
+
+
+
+
+
+/*** add sub admin page css here ********************************/
+.form_text_area label {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #333333;
+}
+.add_formarea {
+    padding: 30px 0px 30px 100px;
+}
+.form_heading {
+   padding: 20px;
+    width: 100%;
+    background: #25336d;
+    color: #fff;
+    font-size: 18px;
+}
+.btn-group.bootstrap-select {
+    width: 100% !important;
+}
+.btn.dropdown-toggle.btn-default {
+    padding: 10px 10px;
+   font-size: 16px;
+   background: #f9f9f9;
+}
+.form_text_area {
+   
+    position: relative;
+}
+.dark_blue_btn{
+	  background: #3a477b;
+}
+.form_text_area input {
+    background: #f9f9f9;
+}
+.fa.fa-question-circle {
+    position: absolute;
+    top: 48px;
+    right: -37px;
+    font-size: 18px;
+}
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+.search_bar_top {
+    margin: 15px 0 20px 0;
+}
+/*** add sub admin page css here ********************************/
+
+/******************** add product start here*************************/
+.form_text_area textarea {
+    height: 100px;
+}
+.image-upload label {
+    border-radius: 3px;
+    padding: 20px 50px;
+}
+.image-upload{
+	text-align:center;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	border: 1px dashed #ccc !important;
+	padding:36px 0 30px 0;
+	
+}
+.image-upload img {
+    display: block;
+	margin: 0 auto;
+}
+.browse {
+   padding: 20px 40px;
+   margin-bottom: 23px;
+    font-size: 18px;
+	background:#3a477b;
+}
+.btn-bs-file{
+    position:relative;
+}
+.btn-bs-file input[type="file"]{
+    position: absolute;
+    top: -9999999;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    width:0;
+    height:0;
+    outline: none;
+    cursor: inherit;
+}
+.add_map a {
+    color: #333333;
+}
+.add_map{
+margin-top: 28px;
+}
+.add_map a i {
+    margin-right: 5px;
+}
+.tables_area h2 {
+    margin-bottom: 30px;
+    margin-top: 20px:;
+    font-size: 24px !important;
+}
+.form_text_area input {
+    height: 40px;
+}
+
+/******************** add product end here*************************/
+/******************add coupon start***********************/
+.type_coupon_wrraper .form_text_area {
+	border-bottom: 1px solid #3333;
+	padding-bottom: 30px;
+}
+.add_formarea .btn .bs-caret .caret {
+	display: none;
+}
+.add_formarea .btn .bs-caret::after {
+	content: "\f107";
+	position: absolute;
+	right: 14px;
+	top: 10px;
+	font-family: fontawesome;
+}
+/******************add coupon end***********************/
+/**************** coupon management start*************/
+.coupon_button {
+    padding: 10px 50px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #e8f8fe;
+    border:1px solid #1bb8fa;
+    color:#000;
+    margin-top: 15px;
+}
+.mian_top_heading {
+    margin: 25px 0 5px 0 !important;
+}
+.white_box thead tr {
+    background: #25336d;
+}
+/**************** coupon management end*************/
+/**************** seller management start here*************/
+.search_bar_top label {
+    font-weight: 400;
+    margin-right: 40px;
+    font-size: 18px;
+}
+.top_custom_dropdown {
+    width: 440px;
+    margin: 0;
+}
+.search_area_top {
+    width: 330px;
+}
+/**************** seller management end here*************/
+/**************** product management start here*************/
+.product_mnag_li{
+	position: relative;
+	padding: 30px 0px 50px 0px;
+	border-bottom: 1px solid #3333;
+	margin:0 20px;
+}
+.product_img {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+.product_mnag_detail {
+    padding-left: 200px;
+}
+.product_mnag_detail h4 {
+    margin: 0;
+}
+.product_mnag_detail p {
+    font-size: 14px;
+}	
+.product_mnag_detail span {
+    font-size: 14px;
+    margin-right: 17px;
+	padding: 10px 0 15px 0px;
+	display: inline-block;
+}
+.product_mnag_detail span img,.product_mnag_detail span i {
+    margin-right: 10px;
+}
+.product_mnag_detail h2 {
+    margin: 10px 0 0 0;
+}
+.product_mnag_li h2 span {
+    margin-left: 45px;
+    font-size: 16px;
+}
+.product_mnag_detail a {
+    color: #000;
+}
+/**************** product management end here*************/
+/**************** seller profile start here*************/
+.main_profile_area {
+    position: relative;
+}
+.profile_image_area {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.profile_detail_area {
+   padding-left: 200px;
+}
+.profile_detail_area input {
+    border: none;
+    box-shadow: none;
+}
+.profile_detail_area label {
+    font-weight: normal;
+    text-decoration: underline;
+    color: #25336d;
+    margin-bottom: 10px;
+}
+.profile_detail_area p {
+  color: #666666;
+  font-size: 14px;
+}
+.profile_image_area span {
+    font-size: 14px;
+    margin-top: 6px;
+	display: inline-block;
+}
+.profile_image_area span i {
+    padding-right: 5px;
+}
+.discount_offer h1 {
+    font-weight: 300;
+    color: #25336d;
+}
+.main_page_frame {
+    padding-left: 280px;
+}
+.cahnge_pswrd_btn {
+    padding: 15px 0px;
+    background: #28930c;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%
+}
+.table_frame {
+    padding: 45px 0;
+}
+.table_frame h3 {
+    margin-bottom: 20px;
+}
+.profile_frame h3,.discount_offer h3 {
+    margin: 5px 0 30px 0;
+}
+/**************** seller profile end here*************/
+/**************** view coupon start here*************/
+.coupon_detail {
+    padding-left: 300px;
+}
+.view_coupon_table {
+    padding-top: 20px;
+}
+.view_coupon {
+   padding: 10px 55px 7px 0;
+}
+.view_coupon a {
+    color: #000;
+}
+.barcode {
+    margin-top: 15px;
+}
+.profile_detail_area.coupon_detail li p {
+    font-size: 14px;
+    padding: 10px 0;
+}
+.profile_detail_area.coupon_detail h4 {
+    color: #25336d;
+    text-decoration: underline;
+    margin: 0;
+}
+.profile_detail_area.coupon_detail li {
+   margin-bottom: 20px;
+}
+.profile_image_area h2 {
+    margin-top: 10px;
+}
+.sub_admin_edit a {
+    color: #000;
+}
+/**************** view coupon end here*************/
+/**************** order details start *************/
+.order_details_list h5 {
+    color: #25336d;
+    text-decoration: underline;
+}
+.order_details_list h2 {
+    margin-top: 20px;
+}
+.order_details_main {
+    border: none;
+    padding: 0px;
+}
+.list_details {
+       border-bottom: 1px solid #3333;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+.order_content {
+    padding: 40px 0;
+}
+.order_image {
+    top: -9px;
+    left: -15px;
+}
+.order_details_list {
+    padding-left: 115px;
+}
+.order_details_list li {
+    margin: 30px 0;
+}
+.billing_details_list h4 {
+    font-size: 16px;
+    text-decoration: underline;
+    color: #25336d;
+}
+.billing_details_list p {
+    font-size: 14px;
+    padding-top: 8px;
+}
+.billing_details_list h3 {
+    color: #25336d;
+    font-size: 26px;
+}
+.billing_details_list h3 span {
+    font-size: 26px;
+    color: #000;
+}
+.pending_red {
+    font-size: 26px !important;
+    color: #ff0018;
+    margin-right: 45px !important;
+}
+.list_details button {
+    background: #28930c;
+    color: #fff;
+    padding: 4px 20px;
+    font-size: 14px;
+    border: none;
+    margin-right: 10px;
+}
+.gray_button {
+    background: #4f4f4f !important;
+}
+.list_details span {
+    font-size: 18px;
+}
+
+/**************** order details end *************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** subscription page css here ***/
+.subscription_box
+{
+	background: #fff;
+	padding: 12px;
+}
+.subscription_box h1
+{
+	font-weight: 700;
+	color: #2e4485;
+	font-size: 62px;
+}
+.subscription_time
+{
+	position: relative;
+	color: #f1a732;
+	text-transform: uppercase;
+}
+.subscription_time:after
+{
+	position: absolute;
+	left:0;
+	top:20px;
+	content: "";
+	width:100%;
+	height:1px;
+	background: #f1a732;
+}
+.subscription_time span
+{
+	display: inline-block;
+	background: #fff;
+	padding: 10px;
+	position: relative;
+	z-index: 1;
+}
+.subscription_box p
+{
+	color: #b5bbcb;
+	font-size: 18px;
+	margin-top: 25px;
+}
+.subscription_box h3
+{
+	margin-top: 10px;
+}
+/*** subscription page css here ***/
+
+
+
+/*** date picker css here ***/
+.ui-datepicker.ui-widget{background: #fff;border: 1px solid #ddd;min-width: 311px;}
+.ui-datepicker.ui-widget .ui-datepicker-header{background: none;border: none;}
+.ui-datepicker.ui-widget .ui-datepicker-prev .ui-icon, .ui-datepicker.ui-widget .ui-datepicker-next .ui-icon {background:url("../images/left_arrow.png") no-repeat scroll center center;cursor: pointer;height: 35px;left: 0;margin: 0;top: 0;width: 35px;}
+.ui-datepicker.ui-widget .ui-datepicker-next .ui-icon {	background:url("../images/right_arrow.png") no-repeat scroll center center;}
+.ui-datepicker-title {color: #000;}
+.ui-datepicker.ui-widget a.ui-state-active{background: #15a5fb;color: #fff;}
+.ui-datepicker.ui-widget .ui-state-default, .ui-datepicker.ui-widget .ui-widget-content .ui-state-default, .ui-datepicker.ui-widget .ui-widget-header .ui-state-default {color: #000;padding: 0 10px;text-align: center;text-shadow: none;}
+.ui-datepicker .ui-datepicker-prev {left: 2px !important;top: 2px !important;}
+.ui-datepicker .ui-datepicker-next {right: 2px !important; top:2px !important;}
+.bootstrap-timepicker-widget.dropdown-menu.open {display: block;padding: 5px;}
+.bootstrap-timepicker-widget {text-align: center;}
+.bootstrap-timepicker-widget input {border: 1px solid #ccc;	padding: 5px;text-align: center;border-radius: 5px;width: 75px;}
+.bootstrap-timepicker-widget table td {padding: 5px 10px;}
+/*** date picker css here ***/
+
+.custom_select .fstElement
+{
+	display: block;
+	font-size: 12px;
+	border-radius: 5px;
+}
+.custom_select .fstElement .fstControls
+{
+	width: 100%;
+}
+.custom_select .fstElement .fstControls .fstQueryInput
+{
+	color:#000;
+	padding: 5px;
+}
+.custom_select .fstChoiceItem, .custom_select .fstResultItem.fstSelected, .custom_select .fstResultItem.fstFocused
+{
+	background-color: #2e4485;
+	border-color:#2e4485;
+}
+.attireMainNav
+{
+	display:none;
+}
+
+.add_formarea h4 {
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom: 15px;
+	color: #2e4485;
+}
+
+
+
+.online_user h4
+{
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 35px;
+}
+.online_user h4 a
+{
+	color: #f1a732;
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: underline;
+	float: right;
+}
+.online_user h4 a:hover
+{
+	text-decoration: none;
+}
+.online_user ul li
+{
+	position: relative;
+	padding-left: 80px;
+	border-bottom: 1px solid #dddddd;
+	min-height: 98px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.online_user ul li:last-child
+{
+	border-bottom: none;
+}
+.online_user ul li img
+{
+	border-radius: 100%;
+	border: 2px solid #cdcdcd;
+	position: absolute;
+	left: 0;
+	top: 15px;
+	width: 68px;
+	height: 68px;
+}
+.online_user_status
+{
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background: #00ff0c;
+	position: absolute;
+	display: inline-block;
+	right: 0;
+	top: 30px;
+}
+.online_user ul li p
+{
+	padding-top: 23px;
+}
+.current_commission
+{
+	background: #d7e7db;
+	font-size: 18px;
+	color: #242424;
+	border-radius: 5px;
+	padding: 20px;
+	margin-bottom: 45px;
+}
+.plan_action_btn
+{
+	color:#242424;
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+.plan_action_btn:hover
+{
+	color:#2e4485;
+}
+
+.dashboard_logoarea a {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
+.dashboard_logoarea a.menu_bar
+{
+	display: none;
+}
+.blue_btn.yellow_btn.pull-right.coupon_button {
+    width: auto;
+}
+
+
+/*** responsive css here ***/
+@media screen and (max-width: 1300px){
+
+.search_area_top {
+	width: 220px;
+}
+.top_custom_dropdown {
+	width: 300px;
+}
+}
+@media screen and (max-width:1200px)
+{
+	.search_form li
+	{
+		width: 32%;
+		margin-right: 1.333%;
+	}
+	.online_user, .subscription_box
+	{
+		margin-top: 15px;
+	}
+
+.search_bar_top .form-group.pull-right {
+    float: none !important;
+    margin-top: 10px;
+    display: block;
+width: 100%;
+}
+.search_bar_top .form-inline .form-group {
+	display: block;
+}
+.top_custom_dropdown, .search_area_top {
+	width: 100%;
+}
+.add_formarea
+{
+	padding-left: 30px;
+	padding-right: 70px;
+}
+
+.add_formarea .col-sm-5
+{
+	width:100%;
+}
+.cahnge_pswrd_btn{
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width:991px)
+{
+	.main-page
+	{
+		padding-left: 0;
+	}
+	.left_sidebar
+	{
+		left:-270px;
+	}
+	.left_sidebar.active
+	{
+		left:0;
+	}
+	.dashboard_logoarea a.menu_bar
+	{
+		display:inline-block;
+	}
+}
+
+@media screen and (max-width:767px)
+{
+	.login_form_outer
+	{
+		margin: 20px auto 0;
+	}
+	.cahnge_pswrd_btn{
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width:480px)
+{
+	
+}
+/*** responsive css here ***/
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
